@@ -1,21 +1,26 @@
 # Lojinha
 
-**TODO: Add description**
+Implementação de um CRUD simples baseado em um sistema utilizado em uma lojinha para estudar sobre cobertura de testes.
 
-## Installation
+Utilizado linguagem ***Elixir***, banco de dados embarcado ***SQLite3*** e para verificar a cobertura do código usado o ***coveralls***.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `lojinha` to your list of dependencies in `mix.exs`:
+## Instalação
 
-```elixir
-def deps do
-  [
-    {:lojinha, "~> 0.1.0"}
-  ]
-end
+No terminal, rodar os comandos: 
+
+```properties
+mix deps.get
+mix deps.compile
+mix coveralls.html
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/lojinha>.
+---
+## Rodar os testes
+
+Ainda no terminal, executar o comando para rodar os testes e gerar o relatório de cobertura:
+
+```properties
+mix coveralls.html
+```
+Abrir em um navegador web o arquivo gerado no diretório */cover/excoveralls.html* para visualizar a cobertura dos testes por arquivo.
 
