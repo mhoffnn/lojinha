@@ -1,9 +1,8 @@
 # Lojinha
 
-[![Build Status](https://github.com/mhoffnn/lojinha/workflows/tests/badge.svg)](https://github.com/mhoffnn/lojinha/actions)
+[![Build Status](https://github.com/mhoffnn/lojinha/actions/workflows/elixir_test.yml/badge.svg)](https://github.com/mhoffnn/lojinha/actions)
 [![Coverage Status](https://coveralls.io/repos/mhoffnn/lojinha/badge.svg?branch=master)](https://coveralls.io/r/mhoffnn/lojinha?branch=master)
 [![Last Updated](https://img.shields.io/github/last-commit/mhoffnn/lojinha.svg)](https://github.com/mhoffnn/lojinha/commits/master)
-
 
 
 Implementação de um CRUD simples baseado em um sistema utilizado em uma lojinha para estudar sobre cobertura de testes.
