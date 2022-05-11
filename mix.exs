@@ -9,14 +9,20 @@ defmodule Lojinha.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       test_coverage: [tool: ExCoveralls],
-      preferred_cli_env: [
-        coveralls: :test,
-        "coveralls.detail": :test,
-        "coveralls.post": :test,
-        "coveralls.html": :test,
-        "test.another": :test,
-      ]
+      preferred_cli_env:
+      cli_env_for(:test, [
+        "coveralls",
+        "coveralls.detail",
+        "coveralls.html",
+        "coveralls.json",
+        "coveralls.post",
+        "coveralls.github"
+      ])
     ]
+  end
+
+  defp cli_env_for(env, tasks) do
+    Enum.reduce(tasks, [], fn key, acc -> Keyword.put(acc, :"#{key}", env) end)
   end
 
   # Run "mix help compile.app" to learn about applications.
